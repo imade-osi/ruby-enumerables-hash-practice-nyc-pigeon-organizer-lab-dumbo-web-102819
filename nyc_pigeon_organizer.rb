@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   data.each do |color_gender_lives, value|
     value.each do |stats, all_names|
       all_names.each do |name|
-        if pigeon_hash[name] == nil
+        if !pigeon_hash[name]
           pigeon_hash[name] = {}
         end
         
