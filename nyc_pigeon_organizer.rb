@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
     pigeon_hash = {}
     
-  data.each do |color_gender_lives, value|
+  data.each do |pidgeon_data, value|
     value.each do |stats, all_names|
       all_names.each do |name|
         if !pigeon_hash[name]
